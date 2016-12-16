@@ -1,0 +1,11 @@
+@import 'varable';
+.footer{
+    width:100%;
+    height:50px;
+    background:#ccc;
+    p{
+        font:16px/50px $publicFont;
+        color:#555;
+        text-align:center;
+    }
+}
