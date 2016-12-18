@@ -78,35 +78,63 @@ table {
     text-align: center; }
 
 .container {
-  padding: 5%;
+  padding: 2% 5%;
   width: 100%;
   height: auto;
   overflow: hidden;
   background-color: #fff; }
-  .container .left {
-    float: left;
-    width: 20%;
-    height: auto; }
-    .container .left ul li {
-      margin-bottom: 10px;
-      background-color: #eee;
-      border: 1px solid #e1e1e1;
-      -moz-transition: all 1s ease-in-out 0.1s;
-      -o-transition: all 1s ease-in-out 0.1s;
-      -ms-transition: all 1s ease-in-out 0.1s;
-      -webkit-transition: all 1s ease-in-out 0.1s;
-      transition: all 1s ease-in-out 0.1s; }
-      .container .left ul li a {
-        display: block;
-        font: 14px/30px "Microsoft YaHei", "Helvetica Neue", Helvetica, STHeiTi, sans-serif;
-        color: #000;
-        text-align: center;
-        text-decoration: none; }
-      .container .left ul li:hover {
-        background-color: #e1e1e1;
-        border: 1px solid #eee;
-        border-radius: 30px; }
-        .container .left ul li:hover a {
-          font-weight: bold; }
-  .container .right {
-    margin-left: 20%; }
+  .container nav {
+    width: 100%;
+    height: auto;
+    overflow: hidden; }
+    .container nav ul {
+      display: -webkit-flex;
+      display: flex; }
+      .container nav ul li {
+        margin: 10px 20px;
+        padding: 10px 0;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        -webkit-flex: 1;
+        flex: 1;
+        background-color: #eee; }
+        .container nav ul li a {
+          margin: 0 auto;
+          width: 160px;
+          height: 160px;
+          display: block;
+          font: bold 24px/150px "Microsoft YaHei", "Helvetica Neue", Helvetica, STHeiTi, sans-serif;
+          text-align: center;
+          background-color: #f1e05a;
+          border-radius: 100%;
+          text-decoration: none;
+          color: #fff;
+          -moz-transition: all 0.5s;
+          -o-transition: all 0.5s;
+          -ms-transition: all 0.5s;
+          -webkit-transition: all 0.5s;
+          transition: all 0.5s;
+          text-transform: uppercase; }
+        .container nav ul li:hover {
+          box-shadow: 5px 0 10px rgba(0, 0, 0, 0.1), -5px 0 10px rgba(0, 0, 0, 0.1), 0 5px 10px rgba(0, 0, 0, 0.1), 0 -5px 10px rgba(0, 0, 0, 0.1); }
+          .container nav ul li:hover a {
+            -moz-transform: rotate(360deg);
+            -o-transform: rotate(360deg);
+            -ms-transform: rotate(360deg);
+            -webkit-transform: rotate(360deg);
+            transform: rotate(360deg); }
+        .container nav ul li:first-child {
+          margin-left: 10px; }
+        .container nav ul li:last-child {
+          margin-right: 10px; }
+  .container .describe {
+    padding: 10px; }
+    .container .describe p {
+      font: 14px/1.2 "Microsoft YaHei", "Helvetica Neue", Helvetica, STHeiTi, sans-serif;
+      color: #000; }
+  .container .title {
+    font: 14px/30px "Microsoft YaHei", "Helvetica Neue", Helvetica, STHeiTi, sans-serif;
+    color: #000;
+    border-bottom: 1px solid #ccc; }
+  .container .content {
+    height: 600px; }
