@@ -130,6 +130,7 @@ table {
   .container .describe {
     padding: 10px; }
     .container .describe p {
+      margin-bottom: 10px;
       font: 14px/1.2 "Microsoft YaHei", "Helvetica Neue", Helvetica, STHeiTi, sans-serif;
       color: #000; }
   .container .title {
