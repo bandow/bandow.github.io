@@ -11,7 +11,8 @@ const config={
         app:'./scripts/app.js',
     },
     output:{
-        path: path.resolve(__dirname, './dist'),
+        // path: path.resolve(__dirname, './dist'),
+        path: path.resolve(__dirname, './'),
         filename: 'scripts/[name]-[chunkhash:5].js',
     },
     module: {
