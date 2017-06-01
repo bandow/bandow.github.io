@@ -6,28 +6,28 @@
 * Version:0.0.1
 * ================================================================== */
 html{
-    font-family: "Microsoft YaHei","Helvetica Neue", Helvetica, STHeiTi, sans-serif;
+	font-family: -apple-system, BlinkMacSystemFont, "PingFang SC","Helvetica Neue",STHeiti,"Microsoft Yahei",Tahoma,Simsun,sans-serif;
 
-    /*-webkit-text-size-adjust是解决 iPhone 横屏时默认会放大文字的问题*/
-    -ms-text-size-adjust:100%;
-    -webkit-text-size-adjust:100%;   
+	/*-webkit-text-size-adjust是解决 iPhone 横屏时默认会放大文字的问题*/
+	-ms-text-size-adjust:100%;
+	-webkit-text-size-adjust:100%;   
 }
 html,body{
 
-    /*-webkit-user-select:none禁止用户进行复制.选择.*/
-    -webkit-user-select:none;
-    user-select:none;
-    width:100%;
+	/*-webkit-user-select:none禁止用户进行复制.选择.*/
+	-webkit-user-select:none;
+	user-select:none;
+	width:100%;
 
-    /*使用min-height:100%代替height：100%*/
+	/*使用min-height:100%代替height：100%*/
   height: 100%;
-    min-height:100%; 
+	min-height:100%; 
 }
 body{
 
-    /*弹性滚动-局部滚动开启弹性滚动：将属性挂在body上，可以避免很多奇怪的bug。*/
+	/*弹性滚动-局部滚动开启弹性滚动：将属性挂在body上，可以避免很多奇怪的bug。*/
   overflow:scroll;
-    -webkit-overflow-scrolling:touch;
+	-webkit-overflow-scrolling:touch;
 }
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -55,9 +55,18 @@ time, div, mark, audio, video {
   box-sizing:border-box;
 }
 ol, ul {
-  list-style: none;
+  list-style: none;  /*去掉列表点*/
 }
 table {
-  border-collapse: collapse;
+  border-collapse: collapse;      /*去掉表格的双行线*/
   border-spacing: 0;
 }
+/*取消a标签在移动端点击时的背景颜色*/
+a,a:hover,a:active,a:visited,a:link,a:focus{
+    -webkit-tap-highlight-color:rgba(0,0,0,0);
+    -webkit-tap-highlight-color: transparent;
+    outline:none;
+    background: none;
+    text-decoration: none;
+}
+input {-webkit-appearance:none; /*ios去除input默认样式*/}
