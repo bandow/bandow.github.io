@@ -1,11 +1,26 @@
  @import 'variable';
 .header{
     width:100%;
-    height:150px;
+    height:40px;
     background:$black;
+    @include display(flex);
+    align-items:center;
+    justify-content:center;
     h1{
-        font:40px/150px $publicFont;
+        font:.75rem/1 $publicFont;
         color:$white;
         text-align:center;
     }
+}
+@media screen and (min-width:641px){
+	.header{
+	    width:100%;
+	    height:150px;
+	    background:$black;
+	    h1{
+	        font:40px/150px $publicFont;
+	        color:$white;
+	        text-align:center;
+	    }
+	}
 }
